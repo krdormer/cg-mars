@@ -5,14 +5,14 @@ import './Dashboard.styles.css';
 
 const Dashboard = () => {
   return (
-    <div className="dashboard-page">
-      <h1>Workouts</h1>
-      <main className="workout-link-container">
+    <main className="dashboard-page">
+      <h1>Workout With Us!</h1>
+      <div className="workout-link-container">
         {data.map(({ id, ...otherDataProps }) => {
           return <WorkoutLinkTag key={id} {...otherDataProps} />;
         })}
-      </main>
-    </div>
+      </div>
+    </main>
   );
 };
 
