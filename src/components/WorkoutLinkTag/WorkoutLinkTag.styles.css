@@ -1,5 +1,7 @@
 .workout-link-tag {
   background-color: aqua;
   width: 33%;
+  height: 30vh;
   margin: 2px;
+  color: aliceblue;
 }
