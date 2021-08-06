@@ -1,8 +1,11 @@
 .dashboard-page {
   text-align: center;
   width: 100vw;
-  font-family: 'United Italic Condensed Heavy';
+}
+
+.dash-intro-greeting {
   color: #99999a;
+  margin: 0;
 }
 
 .workout-link-container {
