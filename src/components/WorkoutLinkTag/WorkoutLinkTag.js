@@ -15,11 +15,7 @@ const WorkoutLinkTag = ({
   history,
 }) => {
   return (
-    <div
-      className="workout-link-tag"
-      key={id}
-      onClick={() => history.push(`/workouts/${trainerId}`)}
-    >
+    <div className="workout-link-tag" key={id}>
       <div className="workout-metrics">
         <div className="workout-intensity-info">
           <span className="workout-impact">
@@ -37,6 +33,12 @@ const WorkoutLinkTag = ({
       </div>
       <div className="specific-workout-text">
         <p>{description}</p>
+        <button
+          onClick={() => history.push(`/workouts/${trainerId}`)}
+          class="btn btn--primary"
+        >
+          Let's Go!
+        </button>
       </div>
 
       {/* <p>{media}</p>
