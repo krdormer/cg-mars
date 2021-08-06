@@ -1,6 +1,6 @@
 import './App.css';
-import Header from './components/Header/Header';
-import Dashboard from './pages/Dashboard/Dashboard';
+import Header from '../Header/Header';
+import Dashboard from '../../pages/Dashboard/Dashboard';
 // import VideoWorkouts from './pages/VideoWorkouts/VideoWorkouts';
 
 const App = () => {
