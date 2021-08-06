@@ -1,5 +1,7 @@
 import './WorkoutLinkTag.styles.css';
 
+import { withRouter } from 'react-router-dom';
+
 const WorkoutLinkTag = ({
   id,
   description,
@@ -10,12 +12,14 @@ const WorkoutLinkTag = ({
   thumbnail,
   title,
   trainerId,
+  history
 }) => {
   return (
     <div
       className="workout-link-tag"
       style={{ backgroundImage: `url(${thumbnail})` }}
       key={id}
+      onClick={() => history.push('/workouts')}
     >
       <p>{description}</p>
       <p>{duration}</p>
@@ -29,4 +33,4 @@ const WorkoutLinkTag = ({
   );
 };
 
-export default WorkoutLinkTag;
+export default withRouter(WorkoutLinkTag);
