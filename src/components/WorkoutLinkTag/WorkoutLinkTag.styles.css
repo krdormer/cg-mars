@@ -1,7 +1,44 @@
 .workout-link-tag {
-  background-color: aqua;
-  width: 33%;
+  width: 31%;
   height: 30vh;
-  margin: 2px;
-  color: aliceblue;
+  margin: 5px;
+  border: 1px solid black;
+  border-radius: 10px;
+  color: #c8102e;
+  font-family: 'Gotham';
+}
+
+p {
+  margin: 2% auto;
+}
+
+.workout-intensity-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.workout-impact {
+  margin: 2%;
+}
+
+.workout-level {
+  margin: 2%;
+}
+
+.workout-timing-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  position: relative;
+  top: 70%;
+}
+
+.workout-duration {
+  margin: 2%;
+}
+
+img {
+  opacity: 0.7;
 }

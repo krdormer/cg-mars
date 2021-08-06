@@ -6,7 +6,7 @@ import './Dashboard.styles.css';
 const Dashboard = () => {
   return (
     <main className="dashboard-page">
-      <h1>Workout With Us!</h1>
+      <h1>WORKOUT WITH US!</h1>
       <div className="workout-link-container">
         {data.map(({ id, ...otherDataProps }) => {
           return <WorkoutLinkTag key={id} {...otherDataProps} />;

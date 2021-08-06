@@ -12,23 +12,28 @@ const WorkoutLinkTag = ({
   thumbnail,
   title,
   trainerId,
-  history
+  history,
 }) => {
   return (
     <div
       className="workout-link-tag"
-      style={{ backgroundImage: `url(${thumbnail})` }}
       key={id}
       onClick={() => history.push('/workouts')}
+      style={{ backgroundImage: `url(${thumbnail})` }}
     >
-      <p>{description}</p>
-      <p>{duration}</p>
-      <p>{impactTag}</p>
-      <p>{levelTag}</p>
-      <p>{media}</p>
-      <p>{thumbnail}</p>
+      <div className="workout-intensity-info">
+        <span className="workout-impact">
+          Impact: {impactTag.toUpperCase()}
+        </span>
+        <span className="workout-level">Level: {levelTag.toUpperCase()}</span>
+      </div>
+      {/* <p>{media}</p>
       <p>{title}</p>
       <p>{trainerId}</p>
+      <p>{description}</p> */}
+      <div className="workout-timing-info">
+        <span className="workout-duration">Duration: {duration} mins</span>
+      </div>
     </div>
   );
 };
