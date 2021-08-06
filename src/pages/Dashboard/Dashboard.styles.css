@@ -1,0 +1,13 @@
+.dashboard-page {
+  text-align: center;
+  width: 100vw;
+}
+
+.workout-link-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  justify-content: center;
+}

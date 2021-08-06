@@ -1,3 +1,5 @@
+import './WorkoutLinkTag.styles.css';
+
 const WorkoutLinkTag = ({
   id,
   description,
@@ -10,8 +12,11 @@ const WorkoutLinkTag = ({
   trainerId,
 }) => {
   return (
-    <div className="workout-link-tag">
-      <p>{id}</p>
+    <div
+      className="workout-link-tag"
+      style={{ backgroundImage: `url(${thumbnail})` }}
+      key={id}
+    >
       <p>{description}</p>
       <p>{duration}</p>
       <p>{impactTag}</p>
