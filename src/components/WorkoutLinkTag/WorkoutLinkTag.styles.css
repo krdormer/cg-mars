@@ -1,6 +1,6 @@
 .workout-link-tag {
   width: 31%;
-  height: 60vh;
+  height: 70vh;
   margin: 5px;
   border: 1px solid black;
   border-radius: 10px;
@@ -35,9 +35,13 @@ p {
 .workout-timing-info {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: space-between;
   position: relative;
-  top: 70%;
+  top: 0;
+}
+
+.workout-title {
+  margin: 2%;
 }
 
 .workout-duration {
@@ -47,7 +51,7 @@ p {
 .specific-workout-text {
   height: 30%;
   color: white;
-  margin-top: 25%;
+  margin-top: 30%;
 }
 
 .trainer-image {

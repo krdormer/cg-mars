@@ -31,11 +31,11 @@ const WorkoutLinkTag = ({
           <img src={thumbnail} alt={title} />
         </div>
         <div className="workout-timing-info">
+          <spam className="workout-title">{title}</spam>
           <span className="workout-duration">Duration: {duration} mins</span>
         </div>
       </div>
       <div className="specific-workout-text">
-        <p>{title}</p>
         <p>{description}</p>
       </div>
 
