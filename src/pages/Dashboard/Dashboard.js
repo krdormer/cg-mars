@@ -5,8 +5,8 @@ const Dashboard = () => {
   return (
     <div className="dashboard-page">
       <h1>I'm a dashboard</h1>
-      {data.forEach((workout) => {
-        console.log(workout);
+      {data.map(({ id, ...otherDataProps }) => {
+        return <WorkoutLinkTag id={id} {...otherDataProps} />;
       })}
     </div>
   );
