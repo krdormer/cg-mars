@@ -1,11 +1,16 @@
 .workout-link-tag {
   width: 31%;
-  height: 30vh;
+  height: 60vh;
   margin: 5px;
   border: 1px solid black;
   border-radius: 10px;
-  color: #c8102e;
+  color: white;
   font-family: 'Gotham';
+  background-color: #c8102e;
+}
+
+.workout-metrics {
+  height: 60%;
 }
 
 p {
@@ -39,6 +44,18 @@ p {
   margin: 2%;
 }
 
-img {
-  opacity: 0.7;
+.specific-workout-text {
+  height: 30%;
+  color: white;
+  margin-top: 25%;
+}
+
+.trainer-image {
+  margin: 5%;
+}
+
+.trainer-image img {
+  width: 300px;
+  height: 350px;
+  border-radius: 100%;
 }

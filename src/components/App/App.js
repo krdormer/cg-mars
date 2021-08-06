@@ -12,7 +12,7 @@ const App = () => {
       <Switch>
         <Route exact path="/" component={Dashboard} />
         {/* Will need to update path to accept dynamic URL */}
-        <Route path="/workouts" component={VideoWorkouts} />
+        <Route path="/workouts/:workoutId" component={VideoWorkouts} />
       </Switch>
     </div>
   );
