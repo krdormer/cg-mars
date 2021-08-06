@@ -11,7 +11,6 @@ const WorkoutLinkTag = ({
 }) => {
   return (
     <div className="workout-link-tag">
-      <h2>Workout Tag</h2>
       <p>{id}</p>
       <p>{description}</p>
       <p>{duration}</p>
