@@ -7,13 +7,20 @@ const VideoWorkouts = ({ match }) => {
   const trainerId = match.params.workoutId;
   const workoutData = data[trainerId - 1];
   return (
-    <div className="video-workout-page">
-      <h2 className="workout-title">{workoutData.title}</h2>
+    <section className="video-workout-page">
+      <h2 class="h2 h2__gotham workout-title">{workoutData.title}</h2>
       <video className="workout-video-feed" controls>
         <source src={workoutData.media} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-    </div>
+      <div className="workout-video-info">
+        <h3 class="h3 h3__gotham">WORKOUT INFO:</h3>
+        <p className="p">Duration: {workoutData.duration} mins</p>
+        <p className="p">Impact: {workoutData.impactTag.toUpperCase()}</p>
+        <p className="p">Level: {workoutData.levelTag.toUpperCase()}</p>
+        <p className="p">{workoutData.description}</p>
+      </div>
+    </section>
   );
 };
 

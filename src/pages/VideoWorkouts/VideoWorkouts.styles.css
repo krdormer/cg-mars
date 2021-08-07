@@ -1,6 +1,7 @@
 .workout-title {
-  color: white;
+  color: #99999a;
   text-align: center;
+  margin-bottom: 1.5%;
 }
 
 .workout-video-feed {
@@ -8,4 +9,13 @@
   height: 80vh;
   margin-left: 10vw;
   margin-right: 10vw;
+}
+
+.workout-video-info {
+  margin: 2% 10% 5% 10%;
+  color: #99999a;
+  padding-bottom: 5%;
+  width: 80vw;
+  height: auto;
+  text-align: left;
 }
