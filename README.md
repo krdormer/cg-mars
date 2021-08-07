@@ -11,27 +11,23 @@ back to the home page where yhou can choose any other video that suits you!
 
 To run the application from terminal:
 
-    Navigate to directory:
+    Navigate to project directory:
         cd cd-mars
+
     Install dependencies:
-        - If using yarn
+        - If using yarn:
             yarn
         - If using NPM:
             npm install
+
     Run development session:
-       - If using yarn
+       - If using yarn:
             yarn start
         - If using NPM:
             npm start
 
     If desired, can also build for production:
-        - If using yarn
+        - If using yarn:
             yarn build
         - If using NPM:
             npm build
-
-    To Test:
-        - If using yarn
-            yarn test
-        - If using NPM:
-            npm test
