@@ -1,49 +1,34 @@
+// CSS Stylings
 import './WorkoutLinkTag.styles.css';
-
+// withRouter HOC for access to browser history API
 import { withRouter } from 'react-router-dom';
 
-const WorkoutLinkTag = ({
-  id,
-  description,
-  duration,
-  impactTag,
-  levelTag,
-  media,
-  thumbnail,
-  title,
-  trainerId,
-  history,
-}) => {
+const WorkoutLinkTag = ({ id, history, ...otherDataProps }) => {
   return (
     <div className="workout-link-tag" key={id}>
-      <div className="workout-metrics">
-        <div className="workout-intensity-info">
-          <span className="workout-impact">
-            Impact: {impactTag.toUpperCase()}
-          </span>
-          <span className="workout-level">Level: {levelTag.toUpperCase()}</span>
-        </div>
-        <div className="trainer-image">
-          <img src={thumbnail} alt={title} />
-        </div>
-        <div className="workout-timing-info">
-          <spam className="workout-title">{title}</spam>
-          <span className="workout-duration">Duration: {duration} mins</span>
-        </div>
-      </div>
-      <div className="specific-workout-text">
-        <p>{description}</p>
-        <button
-          onClick={() => history.push(`/workouts/${trainerId}`)}
-          class="btn btn--primary"
-        >
-          Let's Go!
-        </button>
+      <h2 className="h2 h2__gotham">{otherDataProps.title}</h2>
+      <div className="trainer-image">
+        <img src={otherDataProps.thumbnail} alt={otherDataProps.title} />
       </div>
 
-      {/* <p>{media}</p>
-      
-       */}
+      <div className="workout-intensity-info">
+        <p className="p">Duration: {otherDataProps.duration} mins</p>
+        <p className="workout-impact p">
+          Impact: {otherDataProps.impactTag.toUpperCase()}
+        </p>
+        <p className="workout-level p">
+          Level: {otherDataProps.levelTag.toUpperCase()}
+        </p>
+      </div>
+
+      <p className="workout-description p">{otherDataProps.description}</p>
+
+      <button
+        onClick={() => history.push(`/workouts/${otherDataProps.trainerId}`)}
+        className="btn btn--primary btn--large tag-button"
+      >
+        Let's Go!
+      </button>
     </div>
   );
 };

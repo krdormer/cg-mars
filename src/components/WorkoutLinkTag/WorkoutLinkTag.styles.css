@@ -1,7 +1,8 @@
 .workout-link-tag {
-  width: 26%;
-  height: 70vh;
+  width: 28%;
+  height: auto;
   margin: 2%;
+  padding: 2%;
   border: 1px solid #c8102e;
   border-radius: 10px;
   color: white;
@@ -9,51 +10,16 @@
   background-color: #231f20;
 }
 
-.workout-metrics {
-  height: 60%;
-}
-
-p {
-  margin: 2% auto;
-}
-
 .workout-intensity-info {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 100%;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
 }
 
-.workout-impact {
-  margin: 2%;
-}
-
-.workout-level {
-  margin: 2%;
-}
-
-.workout-timing-info {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  position: relative;
-  top: 0;
-}
-
-.workout-title {
-  margin: 2%;
-}
-
-.workout-duration {
-  margin: 2%;
-}
-
-.specific-workout-text {
-  height: 30%;
-  color: #99999a;
-  margin-top: 30%;
-  width: 70%;
-  margin: 30% auto;
+.workout-description {
+  margin-top: 5%;
+  text-align: left;
 }
 
 .trainer-image {
@@ -64,4 +30,8 @@ p {
   width: 300px;
   height: 350px;
   border-radius: 100%;
+}
+
+.tag-button {
+  margin-top: 5%;
 }
