@@ -12,7 +12,7 @@ back to the home page where yhou can choose any other video that suits you!
 To run the application from terminal:
 
     Navigate to project directory:
-        cd cd-mars
+        cd cg-mars
 
     Install dependencies:
         - If using yarn:
