@@ -1,19 +1,18 @@
 .dashboard-page {
   text-align: center;
   width: 100vw;
+  height: 100vh;
 }
 
 .dash-intro-greeting {
   color: #99999a;
-  margin: 0;
+  margin: 2%;
 }
 
 .workout-link-container {
   display: flex;
   flex-wrap: wrap;
-  width: 90%;
-  margin-left: 5%;
-  margin-right: 5%;
+  width: 100%;
   justify-content: center;
   padding: 0;
   border-radius: 10px;
