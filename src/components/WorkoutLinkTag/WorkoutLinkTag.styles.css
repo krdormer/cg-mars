@@ -1,6 +1,6 @@
 .workout-link-tag {
   display: inline-block;
-  width: 30vw;
+  width: 28vw;
   height: 85vh;
   padding: 2%;
   margin: 1%;
@@ -26,8 +26,9 @@
 }
 
 .workout-link-tag img {
-  width: 25vw;
-  height: 40vh;
+  width: 70%;
+  height: 45%;
   border-radius: 100%;
   padding: 5%;
+  margin: 0 auto;
 }
